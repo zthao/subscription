@@ -17,5 +17,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '跳过隐私政策',
+      activityIds: 'com.android.packageinstaller.activity.InstallerActivity',
+      quickFind: true,
+      actionMaximum: 1,
+      rules: [
+        {
+          key: 0,
+          matches: ['[text="欢迎使用\n软件包安装程序"]', '[text="略过"]'],
+          snapshotUrls: 'https://i.gkd.li/import/13392149',
+        },
+      ],
+    },
   ],
 });
